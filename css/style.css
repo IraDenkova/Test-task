@@ -156,3 +156,42 @@ body{
   background-color: #F2F2F2;
   margin: 5px 13px;
 }
+
+
+
+@media(max-width: 960px){
+  .contact__form{
+    grid-template-columns: 1fr;
+  }
+  .grid-textarea{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+.grid-select{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 8;
+ }
+}
+@media(max-width: 768px){
+  .contact__content{
+    margin: 0 auto 63px;
+  }
+  .contact__inner{
+    display: block;
+  }
+  #map{
+    height: 573px;
+  }
+  .contact{
+    padding-bottom: 133px;
+  }
+}
+@media(max-width: 450px){
+  .contact__button{
+    max-width: 100%;
+  }
+}
