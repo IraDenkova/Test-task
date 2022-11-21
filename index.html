@@ -16,7 +16,6 @@
     <div class="container">
       <div class="contact__inner">
         <div class="contact__content">
-
           <h2 class="contact__title">
             Contact Us
           </h2>
@@ -24,40 +23,58 @@
             The Voodoo team is looking forward to hearing from you!
           </p>
           <form class="contact__form" action="#">
-            <input type="text" placeholder="Full Name*">
-            <input type="text" placeholder="Title/Position*">
-            <select name="">
-              <option class="contact__form-option" value="">Option 1</option>
-              <option class="contact__form-option" value="">Option 2</option>
-              <option class="contact__form-option" value="">Option 3</option>
-              <option class="contact__form-option" value="">Option 4</option>
-              <option class="contact__form-option" value="">Option 5</option>
-            </select>
-            <input type="text" placeholder="Email Address*">
-            <input type="text" placeholder="Phone Number*">
-            <select name="">
-              <option class="contact__form-option" value="">Option 1</option>
-              <option class="contact__form-option" value="">Option 2</option>
-              <option class="contact__form-option" value="">Option 3</option>
-              <option class="contact__form-option" value="">Option 4</option>
-              <option class="contact__form-option" value="">Option 5</option>
-            </select>
-            <select name="">
-              <option class="contact__form-option" value="">Option 1</option>
-              <option class="contact__form-option" value="">Option 2</option>
-              <option class="contact__form-option" value="">Option 3</option>
-              <option class="contact__form-option" value="">Option 4</option>
-              <option class="contact__form-option" value="">Option 5</option>
-            </select>
-            <textarea class="contact__form-textarea" placeholder="Enter Message*"></textarea>
+            <input class="contact__form-input" type="text" placeholder="Full Name*">
+            <input class="contact__form-input" type="text" placeholder="Title/Position*">
+            <div class="custom-select">
+              <select class="contact__form-select">
+                <option class="contact__form-option" value="0">Practice / Institution*</option>
+                <option class="contact__form-option" value="1">Option 1</option>
+                <option class="contact__form-option" value="2">Option 2</option>
+                <option class="contact__form-option" value="3">Option 3</option>
+                <option class="contact__form-option" value="4">Option 4</option>
+                <option class="contact__form-option" value="5">Option 5</option>
+              </select>
+            </div>
+            <input class="contact__form-input" type="text" placeholder="Email Address*">
+            <input class="contact__form-input" type="text" placeholder="Phone Number*">
+            <div class="custom-select">
+              <select class="contact__form-select">
+                <option class="contact__form-option" value="0">Medical Profession*</option>
+                <option class="contact__form-option" value="1">Option 1</option>
+                <option class="contact__form-option" value="2">Option 2</option>
+                <option class="contact__form-option" value="3">Option 3</option>
+                <option class="contact__form-option" value="4">Option 4</option>
+                <option class="contact__form-option" value="5">Option 5</option>
+              </select>
+            </div>
+            <div class="custom-select grid-select">
+              <select class="contact__form-select">
+                <option class="contact__form-option" value="0">Type of Inquiry*</option>
+                <option class="contact__form-option" value="1">Option 1</option>
+                <option class="contact__form-option" value="2">Option 2</option>
+                <option class="contact__form-option" value="3">Option 3</option>
+                <option class="contact__form-option" value="4">Option 4</option>
+                <option class="contact__form-option" value="5">Option 5</option>
+              </select>
+            </div>
+            <textarea class="contact__form-textarea grid-textarea" placeholder="Enter Message*"></textarea>
           </form>
-          <a class="contact__button" href="#">Send Message</a>
+          <button class="contact__button" type="submit">
+            Send Message
+          </button>
         </div>
-        <div class="contact__map">
-          
-        </div>
+        <div class="contact__map" id="map"></div>
       </div>
     </div>
   </section>
+
+
+  <script src="js/main.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
 </body>
 </html>
